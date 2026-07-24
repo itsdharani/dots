@@ -108,9 +108,7 @@ bindsym $mod+q            kill
 
 bindsym $mod+p            exec --no-startup-id flameshot gui -c
 bindsym $mod+Shift+p exec --no-startup-id sh -c 'grim -g "$(slurp)" - | wl-copy'
-bindsym $mod+Shift+w      exec --no-startup-id i3lock -i ~/.config/hypr/wallpapers/lock.png
 bindsym $mod+Shift+o      exec --no-startup-id ~/.local/bin/toggle_monitor
-bindsym $mod+Shift+v      exec --no-startup-id ~/.config/i3/scripts/wallpaper.sh
 
 bindsym $mod+Shift+n exec --no-startup-id redshift -P -O 4500
 bindsym $mod+Shift+m exec --no-startup-id redshift -x && killall redshift
