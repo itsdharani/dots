@@ -1,0 +1,194 @@
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* Base module styling */
+#custom-archicon,
+#clock,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#idle_inhibitor,
+#pulseaudio,
+#pulseaudio_slider,
+#network,
+#battery,
+#workspaces,
+#taskbar {
+  background-color: rgba(22, 19, 32, 0.95);
+  border-radius: 8px;
+  margin: 4px 2px;
+  padding: 0 10px;
+  border-color: #6C7086;
+}
+
+
+.modules-left>* {
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.modules-left>*:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.modules-left>*:last-child {
+  border-radius: 0 8px 8px 0;
+  margin-right: 4px;
+}
+
+.modules-right>* {
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.modules-right>*:first-child {
+  border-radius: 8px 0 0 8px;
+  margin-left: 4px;
+}
+
+.modules-right>*:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+
+#custom-archicon {
+  color: #89B4FA;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+#clock {
+  color: #A6E3A1;
+}
+
+#cpu {
+  color: #74C7EC;
+}
+
+#memory {
+  color: #CBA6F7;
+}
+
+#disk {
+  color: #F5C2E7;
+}
+
+#temperature {
+  color: #FAB387;
+}
+
+#idle_inhibitor {
+  color: #94E2D5;
+}
+
+#pulseaudio {
+  color: #F9E2AF;
+}
+
+#pulseaudio.muted {
+  color: #6C7086;
+}
+
+#network {
+  color: #89DCEB;
+}
+
+#network.disconnected {
+  color: #6C7086;
+}
+
+#battery {
+  color: #A6E3A1;
+}
+
+#battery.charging {
+  color: #74C7EC;
+}
+
+#battery.warning:not(.charging) {
+  color: #FAB387;
+}
+
+#battery.critical:not(.charging) {
+  color: #F38BA8;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+
+#workspaces {
+  padding: 0 6px;
+  background: rgba(22, 19, 32, 0.9);
+}
+
+#workspaces button {
+  color: #6C7086;
+  padding: 0 4px;
+  margin: 0 1px;
+  transition: all 0.2s;
+}
+
+#workspaces button.active {
+  color: #19A9DB;
+}
+
+#workspaces button.occupied {
+  color: #CBA6F7;
+}
+
+#workspaces button:hover {
+  color: #CDD6F4;
+  background: transparent;
+}
+
+
+#taskbar {
+  padding: 0 6px;
+}
+
+#taskbar button {
+  padding: 0 4px;
+  margin: 0 1px;
+  border-radius: 4px;
+}
+
+#taskbar button.active {
+  background: rgba(137, 180, 250, 0.15);
+}
+
+
+#pulseaudio_slider slider {
+  min-height: 0;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+#pulseaudio_slider trough {
+  min-height: 4px;
+  min-width: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#pulseaudio_slider highlight {
+  border-radius: 10px;
+  background: #89B4FA;
+}
