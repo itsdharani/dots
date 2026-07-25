@@ -25,7 +25,6 @@ pavucontrol.ini
 Code.broken/                
 picom/
 code-flags.conf          
-polybar/
 Color-Scripts/              
 procps/
 config/                     
@@ -71,7 +70,6 @@ wal/
 kde.org/                    
 wireshark/
 kiorc                       
-wlogout/
 wofi/
 libresprite/                
 xdg-desktop-portal/
@@ -82,3 +80,5 @@ zathura
 :LOCALAPPDATAnvim/      
 zed/
 Thunar/
+kdeglobals
+xfce4/

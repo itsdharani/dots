@@ -1,0 +1,71 @@
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(15, 14, 23, 0.85);
+    padding: 50px;
+
+}
+
+button {
+    min-width: 150px;
+    min-height: 150px;
+
+    margin: 7px;
+
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+
+    background: none;
+
+    color: #cdecd1;
+    font-family: "FiraCode Nerd Font";
+    font-size: 10px;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+}
+
+
+button label {
+    font-size: 30px;
+    color: #C599FF;
+}
+
+button:hover {
+    background-color: #1F111F;
+}
+
+#lock {
+
+
+    background-image: image(url("./icons/lock.png"), url("./icons/lock.png"));
+    background-size: 60px 60px;
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"), url("./icons/logout.png"));
+    background-size: 60px 60px;
+}
+
+#suspend {
+    background-image: image(url("./icons/suspend.png"), url("./icons/suspend.png"));
+    background-size: 60px 60px;
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"), url("./icons/hibernate.png"));
+    background-size: 60px 60px;
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    background-size: 60px 60px;
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    background-size: 60px 60px;
+}
