@@ -78,7 +78,7 @@ function fish_title
     echo "✩‧₊˚"
 end
 set -gx LS_COLORS "di=38;5;182:ln=38;5;175:ex=38;5;174:*.fish=38;5;116:*.py=38;5;180:*.js=38;5;187:*.json=38;5;223:*.md=38;5;183:*.txt=38;5;145:*.zip=38;5;132:*.tar=38;5;95:*.gz=38;5;131"
-~/.config/"Cat Rain"/catrain.out &
+~/.config/"Cat Rain"/catrain &
 set -l pid $last_pid
 sleep 0.5
 kill $pid 2>/dev/null
