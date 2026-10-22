@@ -9,7 +9,6 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id feh --bg-fill /home/dharani/.dotfiles/wallpapers/nice-blue-background.png
 exec --no-startup-id ~/.config/i3/setoutput
-# REMOVED: exec --no-startup-id xclip (this does nothing useful)
 exec_always --no-startup-id xset s off -dpms
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id ~/.config/polybar/scripts/polybarstart.sh

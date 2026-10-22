@@ -23,9 +23,11 @@ function fish_prompt
         end
     end
 
-    set_color -b $grad_medium $grad_medium
+    set_color  $grad_medium
     printf ''
-    set_color -b $grad_medium $dark_bg --bold
+    set_color -b $grad_medium $grad_dark --bold
+    printf '󰣇 '
+    set_color -b $grad_medium $grad_dark --bold
     printf (prompt_pwd | string replace $HOME '~')
     
     if test -n "$git_info"
